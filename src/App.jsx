@@ -1,25 +1,30 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
+import {
+  HomeOutlined,
+  AppstoreOutlined,
+  ShoppingCartOutlined,
+} from '@ant-design/icons';
 
-const { Header, Content } = Layout;
+const { Content } = Layout;
 
 const App = () => {
   return (
-    <Layout>
-      <Header>
+    <Layout >
+      <div className="footer-menu">
         <Menu theme="dark" mode="horizontal">
-          <Menu.Item key="1">
+          <Menu.Item key="1" icon={<HomeOutlined />}>
             <Link to="/tab1">Tab 1</Link>
           </Menu.Item>
-          <Menu.Item key="2">
+          <Menu.Item key="2" icon={<AppstoreOutlined />}>
             <Link to="/tab2">Tab 2</Link>
           </Menu.Item>
-          <Menu.Item key="3">
+          <Menu.Item key="3" icon={<ShoppingCartOutlined />}>
             <Link to="/add-items">Товары</Link>
           </Menu.Item>
         </Menu>
-      </Header>
+      </div>
       <Content style={{ padding: '20px' }}>
         <Outlet />
       </Content>

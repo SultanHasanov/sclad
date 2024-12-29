@@ -1,7 +1,30 @@
-
-
-  @media(max-width:600px){
-    .ant-table-wrapper .ant-table-tbody > tr > td {
-        padding: 0px 5px;
-      }
+@media (max-width: 600px) {
+  .ant-table-wrapper .ant-table-tbody > tr > td {
+    padding: 0px 5px;
   }
+}
+/* Стиль для контейнера меню */
+.footer-menu {
+  width: 100%;
+}
+
+/* Меню по умолчанию, сверху на больших экранах */
+footer .ant-menu-horizontal {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Медиа-запросы для экранов с шириной до 768px */
+@media (max-width: 400px) {
+  .footer-menu {
+    position: fixed;
+    bottom: 0; /* Фиксируем меню внизу */
+    width: 100%; /* Ширина меню - 100% */
+    z-index: 1000; /* Чтобы меню было поверх других элементов */
+  }
+
+  .footer-menu .ant-menu-horizontal {
+    display: block; /* Меняем меню на вертикальное */
+    text-align: center; /* Выравнивание текста по центру */
+  }
+}
