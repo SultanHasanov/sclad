@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .ant-table-wrapper .ant-table-tbody > tr > td {
     padding: 0px 5px;
   }
@@ -15,7 +15,7 @@ footer .ant-menu-horizontal {
 }
 
 /* Медиа-запросы для экранов с шириной до 768px */
-@media (max-width: 400px) {
+@media (max-width: 650px) {
   .footer-menu {
     position: fixed;
     bottom: 0; /* Фиксируем меню внизу */

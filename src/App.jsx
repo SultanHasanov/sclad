@@ -11,10 +11,14 @@ const { Content } = Layout;
 
 const App = () => {
   return (
-    <Layout >
+    <Layout>
       <div className="footer-menu">
         <Menu theme="dark" mode="horizontal">
-          <Menu.Item key="1" icon={<HomeOutlined />}>
+          {/* Home page link */}
+          <Menu.Item key="home" icon={<HomeOutlined />}>
+            <Link to="/">Home</Link>
+          </Menu.Item>
+          <Menu.Item key="1" icon={<AppstoreOutlined />}>
             <Link to="/tab1">Tab 1</Link>
           </Menu.Item>
           <Menu.Item key="2" icon={<AppstoreOutlined />}>
