@@ -1,7 +1,8 @@
 import React from 'react';
+import OrderForm from '../components/OrderForm';
 
 const Tab1 = () => {
-  return <div>Welcome to Tab 1</div>;
+  return <div><OrderForm/></div>;
 };
 
 export default Tab1;
